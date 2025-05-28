@@ -1,60 +1,69 @@
-# App-Libreria-de-Sonido
-App de escritorio para organizar, etiquetar y reproducir samples de audio con interfaz gráfica en Python y MongoDB.
+🎧 App - Librería de Sonido
 
-1_Instalar Python
-  Descargar e instalar python: https://www.python.org/downloads/windows/
+Librería de Sonido es una aplicación de escritorio desarrollada en Python que permite a los usuarios organizar, etiquetar, buscar y reproducir muestras de audio (samples) de forma rápida y eficiente. Está diseñada especialmente para productores musicales, DJs, diseñadores de sonido y cualquier persona que trabaje con archivos de audio.
 
-2_Instalar MongoDB
-  *Descargá e instalá MongoDB: https://www.mongodb.com/es/products/tools/compass
-  *Luego, en el disco principal (por lo general C: en Windows), creá una carpeta llamada:"C:\data\db"
 
-  Crear base de datos y colección en MongoDB Compass
-    _Abrí MongoDB Compass
-    _Crear la base de datos y colección
-      * En la barra lateral izquierda, hacé clic en "Create Database"
-      *  En el modal que aparece:
-          Database Name: "SOUNDFRESH"
-          Collection Name: "samples"
-    
 
-3_Instalacion de Dependencias 
-  Abrir el CMD e ingresar los siguentes comnados:
-    * pip install pygame==2.5.0
-    * pip install pymongo
-    * pip install pillow
-    * pip install numpy
-    * pip install matplotlib
+🧠 Objetivo General:
 
-4_Estructura de Archivos y Funcionalidades
+Desarrollar una aplicación de escritorio intuitiva y eficiente para organizar, etiquetar, visualizar y reproducir muestras de audio, orientada a productores, diseñadores sonoros y músicos.
 
-main.py
+____________________________________________________________________________________________________________________________________________________________________________________________
 
-init: Conexión con MongoDB y configuración de rutas para archivos
-create_sample: Valida y guarda nuevos samples con archivos asociados
-update_sample: Actualiza samples existentes con manejo seguro de archivos
-delete_sample: Elimina samples con confirmación y limpieza de archivos
-search_samples: Búsqueda insensible a mayúsculas en múltiples campos
-get_sample: Obtiene sample por ID con validación de existencia
-get_all_samples: Recupera todos los samples (con filtro opcional) ordenados
+🎯 Objetivos Específicos:
 
-file_operations.py
+* Permitir el almacenamiento estructurado de samples en una base de datos no relacional (MongoDB).
+* Implementar funcionalidades CRUD (crear, leer, actualizar y eliminar samples).
+* Integrar un sistema de reproducción de audio con visualización de forma de onda.
+* Garantizar una interfaz gráfica amigable usando Python.
+* Asegurar operaciones seguras con archivos multimedia.
 
-initialize_audio: Configura sistema de audio Pygame con parámetros óptimos
-select_audio_file: Diálogo para selección de archivos (WAV/MP3/OGG) con validación
-select_image_file: Diálogo para selección de imágenes (PNG/JPG/GIF)
-play_audio: Reproducción con manejo de errores y detención de reproducciones previas
-stop_audio: Detiene reproducción y libera recursos
-force_delete_file: Eliminación de archivos bloqueados con reintentos
-safe_file_operations: Operaciones seguras de copiado/movimiento
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
-CRUDOperations.py
+❗ Problema: 
+Los productores y diseñadores de sonido suelen tener miles de muestras de audio dispersas, mal organizadas o duplicadas, lo que dificulta su localización, clasificación y uso eficiente. Las herramientas disponibles suelen ser complejas, caras o no adaptadas a flujos de trabajo personalizados.
 
-create_sample: Valida datos obligatorios y guarda con nombres únicos de archivos
-update_sample: Manejo seguro de reemplazo de archivos y actualización de metadatos
-delete_sample: Eliminación con confirmación y manejo de errores
-search_samples: Búsqueda con regex insensible a mayúsculas/minúsculas
 
-waveform.py
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
-load_audio: Carga archivos y extrae datos de onda con cálculo de duración
-draw_waveform: Visualización de onda sonora con amplitudes normalizadas en canvas
+💡 Solución: 
+
+* Una aplicación de escritorio liviana, hecha en Python, que permite:
+* Importar y etiquetar archivos de audio fácilmente.
+* Guardarlos y gestionarlos en MongoDB bajo una colección personalizada.
+* Reproducir los audios con control de reproducción.
+* Visualizar la forma de onda para una selección más precisa.
+* Buscar de forma inteligente por nombre, etiquetas o metadatos.
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+🛠️ Tecnologías Utilizadas: 
+
+* Python (Backend + GUI)
+* MongoDB (Base de datos NoSQL)
+* Pygame (Reproducción de audio)
+* Tkinter o similar (Interfaz gráfica)
+* Pillow, NumPy, Matplotlib (Procesamiento de imágenes y visualización)
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+🗂️ Arquitectura de la Aplicación
+1. principal.py
+  * Manejo principal de la app
+  * Funciones para CRUD y conexión con MongoDB
+
+2. archivo_operaciones.py
+  * Selección, reproducción y eliminación segura de archivos
+
+3. CRUDOperations.py
+  *  Funciones centrales para crear, actualizar, buscar y eliminar samples con validación
+
+4. forma de onda.py
+  * Carga y dibujo de la forma de onda sonora
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+🧪 Requisitos para Ejecutar
+
+_ Python instalado desde: https://www.python.org/downloads/windows/
+_ MongoDB Compass desde: https://www.mongodb.com/es/products/tools/compass
+_ Dependencias Python: pygame, pymongo, pillow, numpy, matplotlib
