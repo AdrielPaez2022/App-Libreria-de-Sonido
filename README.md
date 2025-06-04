@@ -3,8 +3,10 @@ Aplicación para organización y reproducción de samples
 
 Descripción general:
 Librería de Sonido es una aplicación de escritorio desarrollada en Python con una base de datos MongoDB local, pensada para facilitar el trabajo de productores musicales, DJs, diseñadores de sonido y cualquier profesional que trabaje con muestras de audio (samples).
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
 🧠 Su objetivo principal es ofrecer una gestión rápida, visual y eficiente de archivos de sonido, permitiendo su organización, búsqueda, reproducción y visualización de forma intuitiva.
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
 🛠️ Tecnologías utilizadas:  
 
@@ -19,6 +21,7 @@ Librería de Sonido es una aplicación de escritorio desarrollada en Python con 
 -Pillow, NumPy, Matplotlib (Procesamiento de imágenes y visualización)  
 
 
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
   🎯 Funcionalidades principales:  
       🎵 Organizar y etiquetar samples   
