@@ -21,11 +21,11 @@ Librería de Sonido es una aplicación de escritorio desarrollada en Python con 
 
 
   🎯 Funcionalidades principales:  
-    *🎵 Organizar y etiquetar samples   
-     *🖼️ Asociar imágenes a sonidos   
-     *🔊 Reproducir audio desde la app   
-     *📊 Visualizar formas de onda   
-     *📂 Guardar todo en una base MongoDB local   ____________________________________________________________________________________________________________________________________________________________________________________________  
+      🎵 Organizar y etiquetar samples   
+       🖼️ Asociar imágenes a sonidos   
+       🔊 Reproducir audio desde la app   
+       📊 Visualizar formas de onda   
+       📂 Guardar todo en una base MongoDB local   ____________________________________________________________________________________________________________________________________________________________________________________________  
      
  🎯 Objetivos Específicos:
 
@@ -55,57 +55,70 @@ ________________________________________________________________________________
 * Buscar de forma inteligente por nombre, etiquetas o metadatos.
 ____________________________________________________________________________________________________________________________________________________________________________________________
 
-🧪 Requisitos previos para Ejecutar
-🐍 1. Instalación de Python 
--Descargá Python desde 👉 python.org/downloads/windows 
--Activá la opción ✅ “Add Python to PATH” al instalar. 
+🧪 Requisitos previos para Ejecutar:  
 
-🍃.2 Instalación de MongoDB Compass 
--Instalá MongoDB Compass desde 👉 mongodb.com/tools/compass 
--En el disco principal (C:), creá la carpeta: 
- 📁 C:\data\db 
--Luego, en MongoDB Compass: 
-  ➕ Clic en "Create Database" 
-  📌 Database Name: SOUNDFRESH 
-  📌 Collection Name: samples 
+🐍 1. Instalación de Python  
 
-📦 3. Instalación de Dependencias 
- -Abrí CMD y ejecutá uno por uno: 
-      📥 pip install pygame==2.5.0 
-      📥 pip install pymongo 
-      📥 pip install pillow 
-      📥 pip install numpy 
-      📥 pip install matplotlib 
-      💡 Recomendación: crear un entorno virtual con python -m venv venv 
+-Descargá Python desde 👉 python.org/downloads/windows  
+
+-Activá la opción ✅ “Add Python to PATH” al instalar.  
+
+
+🍃.2 Instalación de MongoDB Compass  
+
+-Instalá MongoDB Compass desde 👉 mongodb.com/tools/compass  
+
+-En el disco principal (C:), creá la carpeta:  
+
+ 📁 C:\data\db  
+ 
+-Luego, en MongoDB Compass:  
+
+  ➕ Clic en "Create Database"  
+  
+  📌 Database Name: SOUNDFRESH  
+  
+  📌 Collection Name: samples  
+  
+
+📦 3. Instalación de Dependencias  
+
+ -Abrí CMD y ejecutá uno por uno:       
+      📥 pip install pygame==2.5.0   
+      📥 pip install pymongo   
+      📥 pip install pillow   
+      📥 pip install numpy   
+      📥 pip install matplotlib   
+      💡 Recomendación: crear un entorno virtual con python -m venv venv   
  _____________________________________________________________________________________________________________________________________________________________________________________________
-🗂️ Arquitectura de la Aplicación
-1. principal.py
-  * Manejo principal de la app
-  * Funciones para CRUD y conexión con MongoDB
+🗂️ Arquitectura de la Aplicación  
+1. principal.py  
+  * Manejo principal de la app  
+  * Funciones para CRUD y conexión con MongoDB  
 
-2. archivo_operaciones.py
-  * Selección, reproducción y eliminación segura de archivos
+2. archivo_operaciones.py  
+  * Selección, reproducción y eliminación segura de archivos  
 
-3. CRUDOperations.py
-  *  Funciones centrales para crear, actualizar, buscar y eliminar samples con validación
+3. CRUDOperations.py  
+  *  Funciones centrales para crear, actualizar, buscar y eliminar samples con validación  
 
-4. forma de onda.py
-  * Carga y dibujo de la forma de onda sonora
+4. forma de onda.py  
+  * Carga y dibujo de la forma de onda sonora  
 _____________________________________________________________________________________________________________________________________________________________________________________________
-🧠 Funcionalidades del Sistema: 
-    ✔️ Carga de samples con imágenes y metadatos 
-    🔎 Búsqueda avanzada (por nombre, tags, categoría) 
-    🎶 Reproducción directa del audio 
-    📈 Visualización gráfica de la onda sonora 
-    🗃️ Gestión CRUD (crear, consultar, modificar, eliminar) 
+🧠 Funcionalidades del Sistema:   
+    ✔️ Carga de samples con imágenes y metadatos   
+    🔎 Búsqueda avanzada (por nombre, tags, categoría)   
+    🎶 Reproducción directa del audio   
+    📈 Visualización gráfica de la onda sonora   
+    🗃️ Gestión CRUD (crear, consultar, modificar, eliminar)   
 _____________________________________________________________________________________________________________________________________________________________________________________________
-🔁 Flujo de Uso Básico: 
-     1. 🚀 Ejecutar main.py 
-     2. 📂 Seleccionar audio e imagen 
-     3. 📝 Ingresar metadatos 
-     4. 💾 Guardar 
-     5. 🔍 Buscar samples 
-     6. ▶️ Reproducir 
-     7. 📉 Visualizar forma de onda 
-     8. 🛠️ Editar o eliminar si se desea 
+🔁 Flujo de Uso Básico:   
+     1. 🚀 Ejecutar main.py   
+     2. 📂 Seleccionar audio e imagen   
+     3. 📝 Ingresar metadatos   
+     4. 💾 Guardar   
+     5. 🔍 Buscar samples   
+     6. ▶️ Reproducir   
+     7. 📉 Visualizar forma de onda   
+     8. 🛠️ Editar o eliminar si se desea   
     
