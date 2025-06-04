@@ -6,20 +6,26 @@ Librería de Sonido es una aplicación de escritorio desarrollada en Python con 
 
 🧠 Su objetivo principal es ofrecer una gestión rápida, visual y eficiente de archivos de sonido, permitiendo su organización, búsqueda, reproducción y visualización de forma intuitiva.
 
-🛠️ Tecnologías utilizadas:
--Python (interfaz de escritorio + backend)
--MongoDB (almacenamiento local de datos)
--Pygame (Reproducción de audio)
--Tkinter o similar (Interfaz gráfica)
--Pillow, NumPy, Matplotlib (Procesamiento de imágenes y visualización)
+🛠️ Tecnologías utilizadas:  
+
+-Python (interfaz de escritorio + backend)  
+
+-MongoDB (almacenamiento local de datos)  
+
+-Pygame (Reproducción de audio)  
+
+-Tkinter o similar (Interfaz gráfica)  
+
+-Pillow, NumPy, Matplotlib (Procesamiento de imágenes y visualización)  
+
 
 
   🎯 Funcionalidades principales:  
-    🎵 Organizar y etiquetar samples   
-     🖼️ Asociar imágenes a sonidos   
-     🔊 Reproducir audio desde la app   
-     📊 Visualizar formas de onda   
-     📂 Guardar todo en una base MongoDB local   ____________________________________________________________________________________________________________________________________________________________________________________________  
+    *🎵 Organizar y etiquetar samples   
+     *🖼️ Asociar imágenes a sonidos   
+     *🔊 Reproducir audio desde la app   
+     *📊 Visualizar formas de onda   
+     *📂 Guardar todo en una base MongoDB local   ____________________________________________________________________________________________________________________________________________________________________________________________  
      
  🎯 Objetivos Específicos:
 
