@@ -108,7 +108,7 @@ ________________________________________________________________________________
 3. CRUDOperations.py  
   *  Funciones centrales para crear, actualizar, buscar y eliminar samples con validación  
 
-4. forma de onda.py  
+4. waveform.py  
   * Carga y dibujo de la forma de onda sonora  
 _____________________________________________________________________________________________________________________________________________________________________________________________
 🧠 Funcionalidades del Sistema:   
