@@ -25,7 +25,8 @@ Librería de Sonido es una aplicación de escritorio desarrollada en Python con 
        🖼️ Asociar imágenes a sonidos   
        🔊 Reproducir audio desde la app   
        📊 Visualizar formas de onda   
-       📂 Guardar todo en una base MongoDB local   ____________________________________________________________________________________________________________________________________________________________________________________________  
+       📂 Guardar todo en una base MongoDB local   _____________________________________________________________________________________________________________________________________________________________________________________________
+
      
  🎯 Objetivos Específicos:
 
