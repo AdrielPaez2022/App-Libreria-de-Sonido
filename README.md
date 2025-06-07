@@ -98,11 +98,11 @@ ________________________________________________________________________________
       💡 Recomendación: crear un entorno virtual con python -m venv venv   
  _____________________________________________________________________________________________________________________________________________________________________________________________
 🗂️ Arquitectura de la Aplicación  
-1. principal.py  
+1. main.py  
   * Manejo principal de la app  
   * Funciones para CRUD y conexión con MongoDB  
 
-2. archivo_operaciones.py  
+2. file_operation.py  
   * Selección, reproducción y eliminación segura de archivos  
 
 3. CRUDOperations.py  
