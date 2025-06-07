@@ -100,7 +100,7 @@ ________________________________________________________________________________
 🗂️ Arquitectura de la Aplicación  
 1. main.py  
   * Manejo principal de la app  
-  * Funciones para CRUD y conexión con MongoDB  
+  * Funciones para CRUD 
 
 2. file_operation.py  
   * Selección, reproducción y eliminación segura de archivos  
@@ -109,7 +109,9 @@ ________________________________________________________________________________
   *  Funciones centrales para crear, actualizar, buscar y eliminar samples con validación  
 
 4. waveform.py  
-  * Carga y dibujo de la forma de onda sonora  
+  * Carga y dibujo de la forma de onda sonora
+5. Database.py
+  *conexión con MongoDB 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 🧠 Funcionalidades del Sistema:   
     ✔️ Carga de samples con imágenes y metadatos   
